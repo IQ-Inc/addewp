@@ -117,7 +117,7 @@ func main() {
 
 	ewp.InsertFile(f)
 
-	bs, err := xml.MarshalIndent(ewp, "", "\t")
+	bs, err := xml.MarshalIndent(ewp, "", "    ")
 	if err != nil {
 		fail("Error reconstructing EWP. Original EWP is not modified.")
 	}
